@@ -1,0 +1,12 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(155, 153, 161);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Helvetica;
+}
