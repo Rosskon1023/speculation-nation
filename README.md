@@ -1,4 +1,4 @@
-# Speculation NASA
+# Speculation Nation
 
 A simple web app to:
 - compare and display two cryptocurrencies and their key metrics
