@@ -5,12 +5,15 @@
 
 body {
     /* background-color: rgb(120, 201, 187); */
-    background: url('./img/mR7FOaC\ -\ Imgur.jpg') no-repeat center center fixed;
+    /* background: url('./img/mR7FOaC\ -\ Imgur.jpg') no-repeat center center fixed; */
+    background: linear-gradient(to right, rgb(97, 111, 236), rgb(172, 122, 187), rgb(209, 119, 186));
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Helvetica;
 }
+
+/* CSS for Header */
 
 header {
     display: flex;
@@ -30,13 +33,7 @@ h1 {
     font-size: 3.0rem;
 }
 
-main {
-    flex-grow: 1;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-}
-
-
+/* CSS for coin selection */
 
 #select-coins {
     height: 5rem;
@@ -80,6 +77,14 @@ input[type=submit] {
     margin-right: 5px;
 }
 
+/* CSS for Main Body */
+
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
 #left-bar, #right-bar {
     background-color: rgba(255, 255, 255, 0.5);
     display: flex;
@@ -90,8 +95,8 @@ input[type=submit] {
 
 #main-container {
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 1fr;
-    grid-template-rows: 0.5fr 3fr 1fr;
+    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-rows: 0.25fr 3.5fr 0.5fr;
     grid-gap: 5px;
 }
 
@@ -122,7 +127,9 @@ input[type=submit] {
     width: 85%;
     background-color: rgba(255, 192, 203,0.95);
     border-radius: 10%;
-    box-shadow: -3px 7px 4px #000000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: grid;
+    grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
 }
 .crypto-card-b {
     border: 5px solid rgb(60, 193, 245);
@@ -130,7 +137,47 @@ input[type=submit] {
     width: 85%;
     background-color: rgba(165, 176, 236, 0.95);
     border-radius: 10%;
-    box-shadow: 3px 7px 4px black;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: grid;
+    grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
+}
+
+.symbol {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.symbol h3 {
+    font-family: "Poppins";
+    font-size: 2rem;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top:5%;
+    margin-bottom: 5%;
+    font-family: "Poppins";
+}
+
+.price h4 {
+    font-size: 1.4rem;
+}
+
+.price span{
+}
+
+.supply {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: "Poppins";
 }
 
 footer {
