@@ -1,4 +1,4 @@
-alert('JS is working!');
+// alert('JS is working!');
 
-$header = $('h1');
-console.log($header);
+// $header = $('h1');
+// console.log($header);

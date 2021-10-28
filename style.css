@@ -4,9 +4,58 @@
 }
 
 body {
-    background-color: rgb(155, 153, 161);
+    /* background-color: rgb(120, 201, 187); */
+    background: url('./img/mR7FOaC\ -\ Imgur.jpg') no-repeat center center fixed;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     font-family: Helvetica;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    height: 5rem;
+    background-color: black;
+    align-items: left;
+    border-bottom: 4px solid white;
+}
+
+h1 {
+    font-family: 'VT323';
+    color: lime;
+    margin-left: 1.5rem;
+    font-size: 3.0rem;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#select-coins {
+    height: 4rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    font-family: "Poppins";
+    background-color: rgba(32, 31, 31, 0.9);
+    font-size: 1.1rem;
+}
+
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 4rem;
+    color: lime;
+    flex-direction: column;
+    background-color: rgb(7, 7, 7);
+    border-top: 1px solid white;
+} 
