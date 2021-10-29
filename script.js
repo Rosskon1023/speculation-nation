@@ -56,8 +56,6 @@ $('#main-container').on('click','#speculate-button',function() {
 
 // Functions
 
-
-
 function handleSearch (evt) {
     evt.preventDefault();
     const cryptoOne = $coinInputOne.val().toUpperCase();
@@ -123,11 +121,3 @@ function render () {
         </div>
     `);
 }
-
-// cryptoTwoData.IMAGEURL
-// cryptoTwoData.FROMSYMBOL
-// cryptoTwoData.PRICE
-// cryptoTwoData.CHANGEPCTHOUR
-// cryptoTwoData.CHANGEPCT24HOUR
-// cryptoTwoData.SUPPLY
-// cryptoTwoData.MKTCAP
