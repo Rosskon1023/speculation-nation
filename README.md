@@ -13,15 +13,15 @@ A simple web app to:
 
 ## Screenshots
 
-![screenshot 1](#) <!--- Screenshot of the Landing Page -->
+![screenshot 1](./img/Landing.png) <!--- Screenshot of the Landing Page -->
 
-![screenshot 2](#) <!--- Screenshot of the Initial Comparison and Metrics -->
+![screenshot 2](./img/Compare.png) <!--- Screenshot of the Initial Comparison and Metrics -->
 
-![screenshot 3](#) <!--- Screenshot of the Speculative Price Display -->
+![screenshot 3](./img/Speculate.png) <!--- Screenshot of the Speculative Price Display -->
 
 ## Getting Started
 
-[Click here](#) to see the site live! 
+[Click here](https://speculation-nation.netlify.app) to see the site live! 
 
 ## Future Enhancements
 
