@@ -298,6 +298,7 @@ footer {
         font-family: 'Poppins';
         font-size: 120%;
         height: 30px;
+        width: 120px;
     }
     
     input[type=submit] {
