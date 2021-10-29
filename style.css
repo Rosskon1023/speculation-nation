@@ -267,15 +267,15 @@ footer {
     }
 
     #select-coins {
-        height: 6rem;
+        height: 100px;
         color: white;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        padding-left: 1.1rem;
+        padding-left: 2px;
         font-family: "Poppins";
         background-color: rgba(32, 31, 31, 0.9);
-        font-size: 0.65rem;
+        font-size: 11px;
         border-bottom: 1px dashed white;
     }
     
@@ -288,22 +288,22 @@ footer {
     }
     
     #crypto-two {
-        margin-left: 5px;
+        margin-left: 2px;
     }
     
     input[type=text] {
         background-color: black;
         border: 0.5px solid white;
         color: lime;
-        font-family: 'VT323';
-        font-size: 1.0rem;
-        height: 1.0rem;
+        font-family: 'Poppins';
+        font-size: 120%;
+        height: 50px;
     }
     
     input[type=submit] {
         border: 0.5px solid rgb(246, 247, 246);
         color: black;
-        height: 1.0rem;
+        height: 50px;
         margin-left: 2px;
         margin-right: 2px;
     }
