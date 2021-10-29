@@ -49,7 +49,7 @@ h1 {
 }
 
 #crypto-input {
-    margin-left: 10px;
+    margin-left: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -57,7 +57,7 @@ h1 {
 }
 
 #crypto-two {
-    margin-left: 10px;
+    margin-left: 5px;
 }
 
 input[type=text] {
@@ -125,6 +125,8 @@ main {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #crypto-b {
@@ -184,9 +186,6 @@ main {
 
 .price h4 {
     font-size: 1.4rem;
-}
-
-.price span{
 }
 
 .supply {
