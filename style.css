@@ -297,13 +297,13 @@ footer {
         color: lime;
         font-family: 'Poppins';
         font-size: 120%;
-        height: 50px;
+        height: 30px;
     }
     
     input[type=submit] {
         border: 0.5px solid rgb(246, 247, 246);
         color: black;
-        height: 50px;
+        height: 30px;
         margin-left: 2px;
         margin-right: 2px;
     }
