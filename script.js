@@ -10,6 +10,8 @@ const IMAGE_URL = 'https://www.cryptocompare.com';
 
 let cryptoOneData;
 let cryptoTwoData;
+let capOne;
+let capTwo;
 
 // Cached Elements
 
@@ -22,10 +24,34 @@ const $speculate = $("#speculate-button");
 // Event Listners 
 
 $form.on('submit', handleSearch);
+
 $('#main-container').on('click','#speculate-button',function() {
-   console.log(`${cryptoOneData.MKTCAP}`);
-   console.log(`${cryptoTwoData.MKTCAP}`); 
-});
+   let x;
+   let y;
+   let a;
+   let b;
+   if(cryptoOneData.MKTCAP > cryptoTwoData.MKTCAP) {
+        x = (`${cryptoOneData.MKTCAP}/${cryptoTwoData.SUPPLY}`)
+        y = eval(x).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 5});
+        a = (`${cryptoOneData.MKTCAP}/${cryptoTwoData.MKTCAP}`)
+        b = eval(a)*100-100;
+        b = b.toFixed(2);
+        $('#crypto-b').find('h4').html(`<strong>Price:</strong> $${y}  |  ${b}%`)
+        $('#crypto-b').find('h4').css({
+            "color":"green"
+        });
+    } else {
+        x = (`${cryptoTwoData.MKTCAP}/${cryptoOneData.SUPPLY}`)
+        y = eval(x).toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 5});
+        a = (`${cryptoTwoData.MKTCAP}/${cryptoOneData.MKTCAP}`)
+        b = eval(a)*100-100;
+        b = b.toFixed(2);
+        $('#crypto-a').find('h4').html(`<strong>Price:</strong> $${y}  |  ${b}%`)
+        $('#crypto-a').find('h4').css({
+            "color":"green"
+        });
+    }
+}); 
 
 
 // Functions
