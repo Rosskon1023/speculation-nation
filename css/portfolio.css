@@ -262,9 +262,7 @@ footer {
     }
 
     #main-container {
-        display: flex;
         width: 375px;
-        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
@@ -292,98 +290,32 @@ footer {
         vertical-align: middle;
     }
 
-    #crypto-a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 300px;
-    }
-    
-    #crypto-b {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-width: 300px;
-    }
-
-    .crypto-card-a {
-        border: 2px solid rgb(212, 64, 175);
-        height: 240px;
-        width: 330px;
-        background-color: rgba(255, 192, 203,0.95);
-        border-radius: 10%;
+    table {
+        width: 350px;
+        font-family: "Poppins";
         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        display: grid;
-        grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
-    }
-    .crypto-card-b {
-        margin-top: 15px;
-        border: 2px solid rgb(60, 193, 245);
-        height: 240px;
-        width: 330px;
-        background-color: rgba(165, 176, 236, 0.95);
-        border-radius: 10%;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        display: grid;
-        grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
-    }
-
-    #speculate {
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        visibility: hidden;
     }
     
-    #speculate-button {
-        margin-top: 15px;
-        width: 200px;
-        height: 30px;
-        background:rgba(0, 0, 0, 0.45);
-        color:white;
-        font-size: 0.8rem;
+    caption {
+        font-size: 24px;
+        margin-bottom: 5px;
+        font-family: "VT323";
+    }
+    
+    th {
+        height: 10px;
+        font-size: 12px;
+    }
+    
+    tr {
         text-align: center;
-        box-shadow: rgba(218, 162, 43, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    }
-
-    .symbol {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
+        font-size: 12px;
     }
     
-    .symbol h3 {
-        font-family: "Poppins";
-        font-size: 30px;
-    }
-
-    .symbol img {
-        height: 40px;
-        width: 40px;
-    }
-    
-    .price {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        margin-top:5%;
-        margin-bottom: 5%;
-        font-family: "Poppins";
-    }
-    
-    .price h4 {
-        font-size: 1.1rem;
-    }
-    
-    .supply {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 5%;
-        margin-bottom: 5%;
-        font-family: "Poppins";
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
     }
 
     footer {
