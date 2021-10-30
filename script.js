@@ -118,6 +118,10 @@ function render () {
         </div>
         <div id="speculate">
             <input id="speculate-button" type="button" value="LET'S SPECULATE">
+            <a href="html/portfolio.html">Portfolio Builder!</a>
         </div>
     `);
 }
+
+
+
