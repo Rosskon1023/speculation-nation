@@ -62,12 +62,12 @@ function renderTableRow () {
         <tr>
             <td><img src="${IMAGE_URL}${addedCoinData.IMAGEURL}" alt="${addedCoinData.FROMSYMBOL} Logo" width="50px" height="50px"></td>
             <td>${addedCoinData.FROMSYMBOL}</td>
-            <td>$${addedCoinData.PRICE.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 10})}</td>
+            <td>$${addedCoinData.PRICE.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 5})}</td>
             <td>${addedCoinQuantity}</td>
             <td>$${valueOf}</td>
         </tr>
     `)
-    $('#portfolioValue').html (`
-        <p>Portfolio Value:&nbsp&nbsp&nbsp&nbsp&nbsp$${portfolioValue.toFixed(2)}</p>
+    $('caption').html (`
+        <p>My Portfolio:&nbsp&nbsp&nbsp&nbsp&nbsp$${portfolioValue.toFixed(2)}</p>
     `)
 }
