@@ -96,13 +96,13 @@ main {
 
 #main-container {
     display: grid;
-    grid-template-columns: 1fr 4fr 4fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 0.25fr 3.5fr 0.5fr;
     grid-gap: 5px;
 }
 
 #introduction {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 2/3;
     font-family: "Poppins";
     font-size: 1.35rem;
@@ -122,105 +122,33 @@ main {
     vertical-align: middle;
 }
 
-#crypto-a {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#crypto-b {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#speculate {
-    grid-column: 2/4;
-    grid-row: 3/4;
-}
-
-.crypto-card-a {
-    border: 5px solid rgb(212, 64, 175);
-    height: 85%;
-    width: 85%;
-    background-color: rgba(255, 192, 203,0.95);
-    border-radius: 10%;
+table {
+    grid-column: 2/3;
+    grid-row: 2/3; 
+    font-family: "Poppins";
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    display: grid;
-    grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
-}
-.crypto-card-b {
-    border: 5px solid rgb(60, 193, 245);
-    height: 85%;
-    width: 85%;
-    background-color: rgba(165, 176, 236, 0.95);
-    border-radius: 10%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    display: grid;
-    grid-template-rows: 2fr 0.1fr 3fr 0.1fr 2fr;
+    visibility: hidden;
 }
 
-.symbol {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+caption {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: "VT323";
 }
 
-.symbol h3 {
-    font-family: "Poppins";
-    font-size: 2rem;
+th {
+    height: 20px;
+    font-size: 25px;
 }
 
-.price {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+tr {
     text-align: center;
-    justify-content: space-between;
-    margin-top:5%;
-    margin-bottom: 5%;
-    font-family: "Poppins";
+    font-size: 20px;
 }
 
-.price h4 {
-    font-size: 1.4rem;
-}
-
-.supply {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    font-family: "Poppins";
-}
-
-#speculate {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-#speculate-button {
-    width: 50%;
-    height: 50%;
-    background:rgba(0, 0, 0, 0.45);
-    color:white;
-    font-size: 1.10rem;
-    text-align: center;
-    box-shadow: rgba(218, 162, 43, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-}
-
-#speculate a {
-    font-size: 1.10rem;
-    margin-left: 50px;
-    font-family: "Poppins";
-    color: black;
+table, th, td {
+    border: 2px solid black;
+    border-collapse: collapse;
 }
 
 footer {
