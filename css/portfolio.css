@@ -151,6 +151,17 @@ table, th, td {
     border-collapse: collapse;
 }
 
+#portfolioValue {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    visibility: hidden;
+    font-size: 22px;
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+    font-family: "Poppins";
+}
+
 footer {
     display: flex;
     align-items: center;

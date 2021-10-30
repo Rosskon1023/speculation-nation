@@ -9,6 +9,7 @@ const IMAGE_URL = 'https://www.cryptocompare.com';
 
 // Variables - Data that Changes
 
+let portfolioValue = 0;
 
 // Cached Elements
 
@@ -47,10 +48,14 @@ function renderTableRow () {
     let x;
     x = eval(`${addedCoinData.PRICE}*${addedCoinQuantity}`);
     valueOf = x.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 10});
+    portfolioValue += x;
     $('#introduction').css({
         "visibility":"hidden"
     });
     $('table').css({
+        "visibility":"visible"
+    });
+    $('#portfolioValue').css({
         "visibility":"visible"
     });
     $('table > :last-child').append (`
@@ -61,5 +66,8 @@ function renderTableRow () {
             <td>${addedCoinQuantity}</td>
             <td>$${valueOf}</td>
         </tr>
+    `)
+    $('#portfolioValue').html (`
+        <p>Portfolio Value:&nbsp&nbsp&nbsp&nbsp&nbsp$${portfolioValue.toFixed(2)}</p>
     `)
 }
