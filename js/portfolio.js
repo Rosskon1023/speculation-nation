@@ -63,7 +63,7 @@ function renderTableRow () {
             <td><img src="${IMAGE_URL}${addedCoinData.IMAGEURL}" alt="${addedCoinData.FROMSYMBOL} Logo" width="50px" height="50px"></td>
             <td>${addedCoinData.FROMSYMBOL}</td>
             <td>$${addedCoinData.PRICE.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 5})}</td>
-            <td>${addedCoinQuantity}</td>
+            <td>${addedCoinQuantity.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 5})}</td>
             <td>$${valueOf}</td>
         </tr>
     `)
