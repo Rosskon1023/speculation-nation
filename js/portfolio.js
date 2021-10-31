@@ -68,6 +68,6 @@ function renderTableRow () {
         </tr>
     `)
     $('caption').html (`
-        <p>My Portfolio:&nbsp&nbsp&nbsp&nbsp&nbsp$${portfolioValue.toFixed(2)}</p>
+        <p>My Portfolio:&nbsp&nbsp&nbsp&nbsp&nbsp$${portfolioValue.toLocaleString(undefined, {minimumFractionDigits: 0, maximumFractionDigits: 2})}</p>
     `)
 }
