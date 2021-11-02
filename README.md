@@ -3,6 +3,7 @@
 A simple web app to:
 - compare and display two cryptocurrencies and their key metrics
 - Speculate the potential price of the lower-ranked cryptocurrency if it were to reach the market cap of the higher ranked comparison coin 
+- Build out your own cryptocurrency portfolio by adding assets/quantities to a portfolio tracker
 
 ## Technologies Used 
 
@@ -19,6 +20,8 @@ A simple web app to:
 
 ![screenshot 3](./img/Speculate.png) <!--- Screenshot of the Speculative Price Display -->
 
+![screenshot 4](./img/Portfolio.png) <!--- Portfolio Builder Model Output -->
+
 ## Getting Started
 
 [Click here](https://speculation-nation.netlify.app) to see the site live! 
@@ -27,5 +30,4 @@ A simple web app to:
 
 - Allow the user to compare 3 or more cryptocurrencies 
 - Display the top 10 marketcap coins in real time
-- Allow users to build out a portfolio tracker 
 
