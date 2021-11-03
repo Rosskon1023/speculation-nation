@@ -1,7 +1,7 @@
 # Speculation Nation
 
 A simple web app to:
-- compare and display two cryptocurrencies and their key metrics
+- compare and display two cryptocurrencies and their key metrics (including price, price change, supply and market cap)
 - Speculate the potential price of the lower-ranked cryptocurrency if it were to reach the market cap of the higher ranked comparison coin 
 - Build out your own cryptocurrency portfolio by adding assets/quantities to a portfolio tracker
 
